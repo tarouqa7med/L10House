@@ -1,0 +1,94 @@
+@use "../abstracts/" as *;
+
+#WhyUs {
+
+        scroll-margin-top: 125px;
+
+        .container {
+
+                max-width: 90%;
+
+                h2 {
+                        color: #EE5E00;
+                        font-weight: bold;
+                        font-size: 40px;
+                        position: relative;
+                        width: fit-content;
+        
+                        &::after {
+                                @include afterElement($btm: -15px, $width: 25%, $height: 4px, $tdur: 500ms, $bg-color: #EE5E00);
+                                border-radius: 5px;
+                        }
+                }
+
+                .lg\:col-4 {
+
+                        position: relative;
+
+                        &::before {
+                                content: "";
+                                position: absolute;
+                                left: 50%;
+                                transform: translateX(-50%);                                width: 90%;
+                                max-width: 320px;
+                                height: 450px;
+                                background-color: #EE5E00;
+                                border-radius: 10px;
+                        }
+
+                        &:nth-child(1) .item {
+                                background-image: url("./../../../attachments/best.jpg");
+                        }
+                        &:nth-child(2) .item {
+                                background-image: url("./../../../attachments/solutions.jpg");
+                        }
+                        &:nth-child(3) .item {
+                                background-image: url("./../../../attachments/teamwork.jpg");
+                        }
+                        
+                        .item {
+                                margin: auto;
+                                width: 90%;
+                                max-width: 320px;
+                                height: 450px;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                position: relative;
+                                border-radius: 10px;
+                                transition-duration: 250ms;
+                                overflow: hidden;
+
+                                &:hover {
+                                        transform: translate(-8px, 8px);
+                                }
+
+                                .div {
+                                        width: 100%;
+                                        height: 100%;
+                                        background: linear-gradient(to bottom, transparent 0% 25%, #000000bb 100%);
+
+                                        h4 {
+                                                font-size: 25px;
+                                        }
+                                        p {
+                                                span.span1 {
+                                                        font-weight: 500;
+                                                        color: $firstColor;
+                                                }
+                                                span.span2 {
+                                                        font-weight: 500;
+                                                        color: #EE5E00;
+                                                }
+                                        }
+                                }
+                        }
+                }
+
+                &:hover {
+                        & .container h2::after {
+                                width: 60%;
+                        }
+                }
+        }
+}

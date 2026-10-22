@@ -1,0 +1,19 @@
+
+@mixin afterElement($btm: unset, $width: 0, $height: 2px, $tdur: 500ms, $bg-color: transparent) {
+        content: "";
+        position: absolute;
+        bottom: $btm;
+        left: 50%;
+        transform: translateX(-50%);
+        width: $width;
+        height: $height;
+        background-color: $bg-color;
+        transition-duration: $tdur;
+}
+
+@mixin display($display, $jc, $ai) {
+        display: $display;
+        justify-content: $jc;
+        align-items: $ai;
+}
+

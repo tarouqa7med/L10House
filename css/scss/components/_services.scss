@@ -1,0 +1,62 @@
+@use "../abstracts/" as *;
+
+.Services {
+
+        scroll-margin-top: 125px;
+
+        .container {
+
+                max-width: 90%;
+
+                h2 {
+                        color: #EE5E00;
+                        font-weight: bold;
+                        font-size: 40px;
+                        position: relative;
+                        width: fit-content;
+        
+                        &::after {
+                                @include afterElement($btm: -15px, $width: 25%, $height: 4px, $tdur: 500ms, $bg-color: #EE5E00);
+                                border-radius: 5px;
+                        }
+                }
+
+                .row {
+                        .col {
+                                margin: auto;
+                                .item {
+                                        margin: auto;
+                                        width: 90%;
+                                        transition-duration: 500ms;
+                                        border-radius: 25px;
+
+                                        &:hover {
+                                                background-color: white;
+                                                transform: translateY(-10px);
+                                                box-shadow: 0 0 15px 0 #00000080;
+                                        }
+
+                                        img {
+                                                width: 65px;
+                                        }
+
+                                        p {
+                                                color: black;
+                                                text-align: center;
+
+                                                span {
+                                                        color: $firstColor;
+                                                        font-weight: bold;
+                                                }
+                                        }
+                                }
+                        }
+                }
+        }
+
+        &:hover {
+                & .container h2::after {
+                        width: 60%;
+                }
+        }
+}

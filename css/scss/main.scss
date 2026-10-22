@@ -1,4 +1,9 @@
 @use "./abstracts/" as *;
 
+@use "components/global";
 @use "components/navbar";
-@use "components/main";
+@use "components/header";
+@use "components/aboutUs";
+@use "components/services";
+@use "components/video";
+@use "components/whyUs";

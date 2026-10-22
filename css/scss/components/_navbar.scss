@@ -1,1 +1,43 @@
 @use "../abstracts/" as *;
+
+nav.navbar {
+
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+
+        &.scrolled {
+                .navbar-brand img {
+                        width: 125px;
+                }
+        }
+
+        & .container {
+
+                max-width: 90%;
+
+                .navbar-brand img {
+                        width: 90px;
+                }
+
+                .drawer-body .nav-link {
+
+                        padding: 0;
+                        color: $firstColor;
+                        font-weight: 600;
+                        position: relative;
+
+                        &::before {
+                                @include afterElement($btm: -6px, $bg-color: #EE5E00);
+                        }
+                        &.active::before {
+                                @include afterElement($btm: -6px, $width: 100%, $bg-color: #EE5E00);
+                        }
+                        &:hover::before {
+                                @include afterElement($btm: -6px, $width: 100%, $bg-color: #EE5E00);
+
+                        }
+                }
+        }
+}
