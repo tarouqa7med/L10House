@@ -472,6 +472,6 @@ header .container .arrow-down-link img:nth-child(3) {
   font-weight: 500;
   color: #EE5E00;
 }
-#WhyUs .container:hover .container h2::after {
+#WhyUs:hover .container h2::after {
   width: 60%;
 }/*# sourceMappingURL=main.css.map */

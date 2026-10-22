@@ -85,11 +85,11 @@
                                 }
                         }
                 }
-
-                &:hover {
-                        & .container h2::after {
-                                width: 60%;
-                        }
+        }
+        
+        &:hover {
+                & .container h2::after {
+                        width: 60%;
                 }
         }
 }
