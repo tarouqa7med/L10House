@@ -30,8 +30,7 @@
                                 position: absolute;
                                 left: 50%;
                                 transform: translateX(-50%);                                
-                                width: 90%;
-                                max-width: 320px;
+                                width: 320px;
                                 height: 450px;
                                 background-color: #EE5E00;
                                 border-radius: 10px;
@@ -49,8 +48,7 @@
                         
                         .item {
                                 margin: auto;
-                                width: 90%;
-                                max-width: 320px;
+                                width: 320px;
                                 height: 450px;
                                 background-position: center;
                                 background-repeat: no-repeat;
@@ -86,7 +84,7 @@
                         }
                 }
         }
-        
+
         &:hover {
                 & .container h2::after {
                         width: 60%;

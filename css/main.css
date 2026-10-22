@@ -425,8 +425,7 @@ header .container .arrow-down-link img:nth-child(3) {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 90%;
-  max-width: 320px;
+  width: 320px;
   height: 450px;
   background-color: #EE5E00;
   border-radius: 10px;
@@ -442,8 +441,7 @@ header .container .arrow-down-link img:nth-child(3) {
 }
 #WhyUs .container .lg\:col-4 .item {
   margin: auto;
-  width: 90%;
-  max-width: 320px;
+  width: 320px;
   height: 450px;
   background-position: center;
   background-repeat: no-repeat;
