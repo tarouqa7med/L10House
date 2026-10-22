@@ -29,7 +29,8 @@
                                 content: "";
                                 position: absolute;
                                 left: 50%;
-                                transform: translateX(-50%);                                width: 90%;
+                                transform: translateX(-50%);                                
+                                width: 90%;
                                 max-width: 320px;
                                 height: 450px;
                                 background-color: #EE5E00;
@@ -37,13 +38,13 @@
                         }
 
                         &:nth-child(1) .item {
-                                background-image: url("./../../../attachments/best.jpg");
+                                background-image: url("./../attachments/best.jpg");
                         }
                         &:nth-child(2) .item {
-                                background-image: url("./../../../attachments/solutions.jpg");
+                                background-image: url("./../attachments/solutions.jpg");
                         }
                         &:nth-child(3) .item {
-                                background-image: url("./../../../attachments/teamwork.jpg");
+                                background-image: url("./../attachments/teamwork.jpg");
                         }
                         
                         .item {

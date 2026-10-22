@@ -82,7 +82,7 @@ header::before {
   transform: rotate(180deg);
   width: 100%;
   height: 150px;
-  background-image: url("./../../../attachments/wavesOpacity.svg");
+  background-image: url("./../attachments/wavesOpacity.svg");
   z-index: -1;
 }
 header .container {
@@ -351,7 +351,7 @@ header .container .arrow-down-link img:nth-child(3) {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: radial-gradient(rgba(104, 183, 3, 0.8666666667), rgba(48, 93, 0, 0.8666666667)), url("./../../../attachments/video-bg.jpg") fixed;
+  background: radial-gradient(rgba(104, 183, 3, 0.8666666667), rgba(48, 93, 0, 0.8666666667)), url("./../attachments/video-bg.jpg") fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -432,13 +432,13 @@ header .container .arrow-down-link img:nth-child(3) {
   border-radius: 10px;
 }
 #WhyUs .container .lg\:col-4:nth-child(1) .item {
-  background-image: url("./../../../attachments/best.jpg");
+  background-image: url("./../attachments/best.jpg");
 }
 #WhyUs .container .lg\:col-4:nth-child(2) .item {
-  background-image: url("./../../../attachments/solutions.jpg");
+  background-image: url("./../attachments/solutions.jpg");
 }
 #WhyUs .container .lg\:col-4:nth-child(3) .item {
-  background-image: url("./../../../attachments/teamwork.jpg");
+  background-image: url("./../attachments/teamwork.jpg");
 }
 #WhyUs .container .lg\:col-4 .item {
   margin: auto;
