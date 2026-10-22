@@ -1,2 +1,4 @@
+@use "./abstracts/" as *;
 
-@use "./abstracts/main" as *;
+@use "components/navbar";
+@use "components/main";
