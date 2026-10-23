@@ -92,16 +92,21 @@ header .container .part1 .item h2 {
   color: #709F3D;
   font-size: 65px;
 }
-header .container .part1 .item > p:nth-of-type(1) {
+header .container .part1 .item > p {
   color: #555 !important;
 }
-header .container .part1 .item .animatedP {
+header .container .part1 .item .cd-intro {
   position: relative;
-  height: 50px;
+  display: flex;
+  margin-block: 10px !important;
+  margin-left: 0;
 }
-header .container .part1 .item .animatedP p {
-  position: absolute;
-  color: #EE5E00;
+header .container .part1 .item .cd-intro h4 {
+  font-size: 20px !important;
+  font-weight: 500;
+}
+header .container .part1 .item .cd-intro h4 span {
+  color: #EE5E00 !important;
 }
 header .container .part1 .item .playVideo {
   display: flex;
@@ -289,7 +294,7 @@ header .container .arrow-down-link img:nth-child(3) {
   scroll-margin-top: 125px;
 }
 .Services .container {
-  max-width: 90%;
+  max-width: 100%;
 }
 .Services .container h2 {
   color: #EE5E00;
@@ -310,6 +315,10 @@ header .container .arrow-down-link img:nth-child(3) {
   background-color: #EE5E00;
   transition-duration: 500ms;
   border-radius: 5px;
+}
+.Services .container .row {
+  max-width: 90%;
+  margin-block: 50px;
 }
 .Services .container .row .col {
   margin: auto;
@@ -336,15 +345,12 @@ header .container .arrow-down-link img:nth-child(3) {
   color: #709F3D;
   font-weight: bold;
 }
-.Services:hover .container h2::after {
-  width: 60%;
-}
-
-#Video {
+.Services .container #Video {
+  max-width: 100%;
   position: relative;
   overflow: hidden;
 }
-#Video::before {
+.Services .container #Video::before {
   content: "";
   position: absolute;
   top: 0;
@@ -357,10 +363,10 @@ header .container .arrow-down-link img:nth-child(3) {
   background-repeat: no-repeat;
   z-index: -1;
 }
-#Video .container {
-  max-width: 90%;
+.Services .container #Video .container {
+  max-width: 100%;
 }
-#Video .container h2 {
+.Services .container #Video .container h2 {
   color: white;
   font-weight: bold;
   font-size: 40px;
@@ -368,7 +374,7 @@ header .container .arrow-down-link img:nth-child(3) {
   width: -moz-fit-content;
   width: fit-content;
 }
-#Video .container h2::after {
+.Services .container #Video .container h2::after {
   content: "";
   position: absolute;
   bottom: -15px;
@@ -380,14 +386,20 @@ header .container .arrow-down-link img:nth-child(3) {
   transition-duration: 500ms;
   border-radius: 5px;
 }
-#Video .container button i {
+.Services .container #Video .container button {
+  margin-top: 50px;
+}
+.Services .container #Video .container button i {
   font-size: 75px;
   transition-duration: 500ms;
 }
-#Video .container button i:hover {
+.Services .container #Video .container button i:hover {
   transform: scale(1.2);
 }
-#Video:hover .container h2::after {
+.Services .container #Video:hover .container h2::after {
+  width: 60%;
+}
+.Services:hover .container h2::after {
   width: 60%;
 }
 

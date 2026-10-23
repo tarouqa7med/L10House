@@ -6,7 +6,7 @@
 
         .container {
 
-                max-width: 90%;
+                max-width: 100%;
 
                 h2 {
                         color: #EE5E00;
@@ -22,6 +22,10 @@
                 }
 
                 .row {
+
+                        max-width: 90%;
+                        margin-block: 50px;
+
                         .col {
                                 margin: auto;
                                 .item {
@@ -49,6 +53,62 @@
                                                         font-weight: bold;
                                                 }
                                         }
+                                }
+                        }
+                }
+
+                #Video {
+
+                        max-width: 100%;
+                        position: relative;
+                        overflow: hidden;
+
+                        &::before {
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100vh;
+                                background: radial-gradient(#68b703dd,#305d00dd), url("./../attachments/video-bg.jpg") fixed;
+                                background-position: center;
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                z-index: -1;
+                        }
+
+                        .container {
+
+                                max-width: 100%;
+
+                                h2 {
+                                        color: white;
+                                        font-weight: bold;
+                                        font-size: 40px;
+                                        position: relative;
+                                        width: fit-content;
+                        
+                                        &::after {
+                                                @include afterElement($btm: -15px, $width: 25%, $height: 4px, $tdur: 500ms, $bg-color: white);
+                                                border-radius: 5px;
+                                        }
+                                }
+                                button {
+                                        margin-top: 50px;
+                                        i {
+                                                font-size: 75px;
+                                                transition-duration: 500ms;
+
+                                                &:hover {
+                                                        transform: scale(1.2);
+                                                }
+                                        }
+                                }
+                        }
+
+                        &:hover {
+                                & .container h2::after {
+                                        width: 60%;
                                 }
                         }
                 }

@@ -29,17 +29,23 @@ header {
                                         font-size: 65px;
                                 }
 
-                                & > p:nth-of-type(1) {
+                                & > p {
                                         color: #555 !important;
                                 }
 
-                                .animatedP {
+                                .cd-intro {
                                         position: relative;
-                                        height: 50px;
+                                        display: flex;
+                                        margin-block: 10px !important;
+                                        margin-left: 0;
 
-                                        p {
-                                                position: absolute;
-                                                color: #EE5E00;
+                                        h4 {
+                                                font-size: 20px !important;
+                                                font-weight: 500;
+
+                                                span {
+                                                        color: #EE5E00 !important;
+                                                }
                                         }
                                 }
 
