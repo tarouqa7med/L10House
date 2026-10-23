@@ -2,10 +2,7 @@
 
 nav.navbar {
 
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 9999;
+        @include properities($pos: fixed, $top: 0, $width: 100%, $zIndex: 9999);
 
         &.scrolled {
                 .navbar-brand img {

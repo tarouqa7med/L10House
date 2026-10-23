@@ -6,14 +6,8 @@ header {
 
         &::before {
                 content: "";
-                position: absolute;
-                bottom: 0;
-                left: 0;
+                @include properities($pos: absolute, $left: 0, $bottom: 0, $width: 100%, $height: 150px, $bgColor: url("./../attachments/wavesOpacity.svg"), $zIndex: -1) ;
                 transform: rotate(180deg);
-                width: 100%;
-                height: 150px;
-                background-image: url("./../attachments/wavesOpacity.svg");
-                z-index: -1;
         }
 
         .container {
@@ -55,25 +49,16 @@ header {
                                                 text-decoration: none;
                                                 i {
                                                         @include display($display: flex, $jc: center, $ai: center);
-                                                        color: $firstColor;
+                                                        @include properities($pos: relative, $color: $firstColor, $zIndex: 0, $tdur: 500ms);
                                                         font-size: 18px;
-                                                        position: relative;
-                                                        z-index: 0;
-                                                        transition-duration: 500ms;
-                                                        
+
                                                         &:hover {
                                                                 color: white;
                                                         }
 
                                                         &::after {
-                                                                @include afterElement($width: 0, $height: 0, $tdur: 500ms, $bg-color: $firstColor);
-                                                                bottom: 0;
-                                                                top: 50%;
-                                                                transform: translate(-50%, -50%);
-                                                                width: 0;
-                                                                height: 0;
-                                                                z-index: -1;
-                                                                border-radius: 50%;
+                                                                content: "";
+                                                                @include properities($pos: absolute, $left: 50%, $x: -50%, $width: 0, $height: 0, $bgColor: $firstColor, $color: unset, $br: 50%, $zIndex: -1, $tdur: 500ms); 
                                                         }
                                                         &:hover::after {
                                                                 width: 35px;
@@ -99,61 +84,16 @@ header {
                 }
 
                 .arrow-down-link {
-                        position: absolute;
-                        top: 85%;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        background-color: red;
-                        width: 25px;
+                        @include properities($pos: absolute, $top: 85%, $left: 50%, $x: -50%, $width: 25px) ;
 
                         img {
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                width: 100%;
+                                @include properities($pos: absolute, $top: 0, $left: 0, $width: 100%);
                                 aspect-ratio: 1.25/1;
 
-                                &:nth-child(1) {
-                                        @keyframes img1 {
-                                                0% {
-                                                        opacity: 0;
-                                                } 50% {
-                                                        opacity: 1;
-                                                } 100% {
-                                                        opacity: 0;
-                                                }
+                                @for $i from 1 through 3 {
+                                        &:nth-child(#{$i}) {
+                                                animation: img#{$i} 2s ease 0s infinite normal forwards;
                                         }
-                                        animation: img1 2s linear 0s infinite normal forwards;
-                                }
-                                &:nth-child(2) {
-                                        @keyframes img2 {
-                                                0% {
-                                                        top: 0;
-                                                        opacity: 0;
-                                                } 50% {
-                                                        top: 15px;
-                                                        opacity: 1;
-                                                } 100% {
-                                                        top: 15px;
-                                                        opacity: 0;
-                                                }
-                                        }
-                                        animation: img2 2s linear 0s infinite normal forwards;
-                                }
-                                &:nth-child(3) {
-                                        @keyframes img3 {
-                                                0% {
-                                                        top: 0;
-                                                        opacity: 0;
-                                                } 50% {
-                                                        top: 30px;
-                                                        opacity: 1;
-                                                } 100% {
-                                                        top: 30px;
-                                                        opacity: 0;
-                                                }
-                                        }
-                                        animation: img3 2s linear 0s infinite normal forwards;
                                 }
                         }
                 }

@@ -5,12 +5,17 @@ html {
 }
 body {
         background: linear-gradient(to right, #eef2f3, #8e9eab) !important;
-}
-body::-webkit-scrollbar {
-        width: 15px;
-        background-color: #bccddb;
-}
-body::-webkit-scrollbar-thumb {
-        background: linear-gradient(to right, color-mix(in srgb, $firstColor 50%, black 50%), $firstColor);
-        border-radius: 8px;
+
+        &::-webkit-scrollbar {
+                width: 15px;
+                background-color: #bccddb;
+        }
+        &::-webkit-scrollbar-thumb {
+                background: linear-gradient(to right, color-mix(in srgb, $firstColor 50%, black 50%), $firstColor);
+                border-radius: 8px;
+                
+                &:hover {
+                        background: linear-gradient(color-mix(in srgb, $firstColor 70%, black 30%));
+                }
+        }
 }
