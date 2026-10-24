@@ -1,73 +1,55 @@
 @use "../abstracts/" as *;
 
-@mixin mixin1() {
-        & {
-                display: flex;
-                flex-direction: column;
-        }
-        & img {
-                width: 90%;
-                margin-bottom: 20px;
-        }
-        & p {
-                width: 90%;
-        }
-}
-
 .AboutUs {
         background-color: white;
         scroll-margin-top: 125px;
 
         .container {
-                max-width: 90%;
+                width: 90%;
 
-                h2 {
-                        @include properities($color: #EE5E00, $pos: relative, $width: fit-content);
+                .title {
+                        @include properities($color: $secondColor, $pos: relative, $width: fit-content);
                         font-weight: bold;
-                        margin-bottom: 50px;
                         font-size: 40px;
+                        margin-bottom: 50px !important;
 
                         &::after {
                                 content: "";
-                                @include properities($br: 10px, $pos: absolute, $bottom: -15px, $left:50%, $width: 25%, $height: 4px, $tdur: 500ms, $x:-50%, $bgColor: #EE5E00);
+                                @include properities($br: 10px, $pos: absolute, $bottom: -15px, $left:50%, $width: 25%, $height: 4px, $tdur: 500ms, $x:-50%, $bgColor: $secondColor);
                         }
                 }
 
-                .layout {
-                        @include display($display: flex, $jc: center, $ai: center);
-                        column-gap: 20px;
-
-                        img {
-                                @include properities($width:40%, $br: 10px);
-                        }
-                        p {
-                                @include properities($width:60%, $color: #555);
-
-                                span {
-                                        font-weight: 500;
-                                }
-                                .span1 {
-                                        color: $firstColor;
-                                }
-                                .span2 {
-                                        color: #EE5E00
-                                }
-                        }
+                .row {
 
                         @include responsive(850) {
-                                @include mixin1();
+                                & {
+                                        display: block;
+                                }
                         }
-                        @include responsive(650) {
-                                @include mixin1();
-                        }
-                        @include responsive(450) {
-                                @include mixin1();
-                        }
-                        @include responsive(250) {
-                                @include mixin1();
+                        .col {
+                                .item {
+
+                                        width: 95%;
+                                        p {
+                                                color: #555;
+                                        }
+
+                                        @include responsive(850) {
+                                        & {
+                                                margin: auto;
+                                                width: 90%;
+                                        }
+                                }
+                                }
+
+                                @include responsive(850) {
+                                        & {
+                                                width: 100%;
+                                                margin-bottom: 35px;
+                                        }
+                                }
                         }
                 }
-
         }
 
         &:hover {

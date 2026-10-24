@@ -8,7 +8,7 @@
         <meta name="auther" content="Tarouq A7med">
         <link rel="stylesheet" data-type="css-local" href="./css/plugins/animated-headline/style.css">
         <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" crossorigin="anonymous">
-        <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" crossorigin="anonymous">
+        <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" crossorigin="anonymous">
         <link rel="stylesheet" data-type="css-local" href="./css/main.css">
         <link rel="icon" data-type="logo" href="./attachments/logo.png">
         <script src="./javascript/plugins/animated-headline/modernizr.js"></script>
@@ -16,66 +16,62 @@
 </head>
 <body>
 
-        <nav class="navbar md:navbar-expand p-0 bg-transparent">
+        <nav class="navbar navbar-expand-lg">
                 <div class="container">
                         <a class="navbar-brand" href="#">
                                 <img class="my-2" src="./attachments/logo.png" alt="">
                         </a>
-                        <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer"
-                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
                         </button>
-                        <dialog class="drawer drawer-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
-                                <div class="drawer-header">
-                                        <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="drawer"
-                                                aria-label="Close">
-                                        </button>
-                                </div>                                
-                                <div class="drawer-body ms-auto">
-                                        <ul class="navbar-nav column-gap-5">
-                                                <li class="nav-item">
-                                                        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                        <a class="nav-link" href="#AboutUs">About Us</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                        <a class="nav-link" href="#Services">Services</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                        <a class="nav-link" href="#WhyUs">Why Us?</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                        <a class="nav-link" href="#LanguageAndSectors">Language & Sectors</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                        <a class="nav-link" href="#ContactUs">Contact Us</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                        <a class="nav-link" href="#NewVendor">New Vendor!</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                        <a class="nav-link menu-toggle" href="#" role="button" data-bs-toggle="menu" aria-expanded="false">Login</a>
-                                                        <div class="menu">
-                                                                <a class="menu-item p-3" href="#">Vendor Login</a>
-                                                                <a class="menu-item p-3" href="#">Client Login Action</a>
-                                                        </div>
-                                                </li>
-                                        </ul>
-                                </div>
-                        </dialog>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav column-gap-4 ms-auto">
+                                        <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="#AboutUs">About Us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="#Services">Services</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="#WhyUs">Why Us?</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="#LanguageAndSectors">Language & Sectors</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="#ContactUs">Contact Us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="#NewVendor">New Vendor!</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <ul class="dropdown p-0">
+                                                        <a class="nav-link text-decoration-none dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Login
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item py-3" href="#">Vendor Login</a></li>
+                                                                <li><a class="dropdown-item py-3" href="#">Client Login Action</a></li>
+                                                        </ul>
+                                                </ul>
+                                        </li>
+                                </ul>
+                        </div>
                 </div>
         </nav>
 
         <header class="vh-100" id="Home">
                 <div class="container d-flex h-100">
                         <div class="row w-100">
-                                <div class="lg:col-6 md:col-10 part1">
+                                <div class="col-lg-6 col-md-10 m-md-auto part1">
                                         <div class="item d-flex flex-column justify-content-center h-100">
-                                                <h2 class="mb-1">L10N House</h2>
-                                                <p class="my-8">will help you communicate your message</p>
+                                                <h2 class="title mb-1">L10N House</h2>
+                                                <p class="my-8 fs-3">will help you communicate your message</p>
                                                 <div class="cd-intro m-0">
                                                         <h4 class="cd-headline clip is-full-width">
                                                                 <span class="cd-words-wrapper">
@@ -86,14 +82,14 @@
                                                         </h4>
                                                 </div>
                                                 <div class="playVideo d-flex">
-                                                        <a href="#" class="me-3">
+                                                        <a href="#">
                                                                 <i class="fa-solid fa-play"></i>
                                                         </a>
-                                                        <span class="ms-5">Play Video</span>
+                                                        <span class="ms-4">Play Video</span>
                                                 </div>
                                         </div>
                                 </div>
-                                <div class="lg:col-6 md:col-10 part2">
+                                <div class="col-lg-6 col-md-10 m-md-auto part2">
                                         <div class="item h-100 d-flex">
                                                 <img class="d-block m-auto" src="./attachments/globe-png-39540.png" alt="">
                                         </div>
@@ -107,95 +103,76 @@
                 </div>
         </header>
 
-        <section class="AboutUs py-10" id="AboutUs">
-                <div class="container py-10">
-                        <h2 class="m-auto">ABOUT US</h2>
-                        <div class="layout">
-                                <img src="./attachments/about.png" alt="">
-                                <p>Located in the heart of dynamic Egypt, <span class="span1">L10N</span> <span class="span2">House</span> is a fast-growing company fully equipped to fulfil your translation
-                                and localization requirements, whatever the size and scope of your project. Our personalized approach that reflects our
-                                passion and uncompromising commitment to every client has seen us enjoy constant and steady growth. We pride ourselves
-                                on our reputation for QUALITY, DEPENDABILITY, SPEED, and CONFIDENTIALITY - ensuring we deliver first-rate projects on
-                                time and on budget, every time. Our reputation is built on delivering reliable, accurate projects on time and on budget.
-                                Our 24/7 customer service allows us to solve your problems in real time with a fast turn-around. <span class="span1">L10N</span> <span class="span2">House</span> takes the
-                                stress out of the language translation and localization process by providing fast, high-quality service for every piece
-                                of communication you need translated - in any language, for any type of content.</p>
+        <section class="AboutUs py-5" id="AboutUs">
+                <div class="container py-5">
+                        <h2 class="title m-auto">ABOUT US</h2>
+                        <div class="row m-auto">
+                                <div class="col col-lg-5">
+                                        <div class="item">
+                                                <img class="img-fluid rounded-4" src="./attachments/about.png" alt="">
+                                        </div>
+                                </div>
+                                <div class="col col-lg-7">
+                                        <div class="item">
+                                                <p class="fs-4">Located in the heart of dynamic Egypt, <span class="fw-medium"><span class="firstColor">L10N</span> <span class="secondColor">House</span></span> is a fast-growing company fully equipped to fulfil your translation
+                                                and localization requirements, whatever the size and scope of your project. Our personalized approach that reflects our
+                                                passion and uncompromising commitment to every client has seen us enjoy constant and steady growth. We pride ourselves
+                                                on our reputation for QUALITY, DEPENDABILITY, SPEED, and CONFIDENTIALITY - ensuring we deliver first-rate projects on
+                                                time and on budget, every time. Our reputation is built on delivering reliable, accurate projects on time and on budget.
+                                                Our 24/7 customer service allows us to solve your problems in real time with a fast turn-around. <span class="fw-medium"><span class="firstColor">L10N</span> <span class="secondColor">House</span></span> takes the
+                                                stress out of the language translation and localization process by providing fast, high-quality service for every piece
+                                                of communication you need translated - in any language, for any type of content.</p>
+                                        </div>
+                                </div>
                         </div>
                 </div>
         </section>
 
-        <section class="Services py-10" id="Services">
-                <div class="container px-0 pt-10">
-                        <h2 class="m-auto mb-10">Services</h2>
-                        <div class="row row-gap-10 m-auto">
-                                <div class="col lg:col-6" data-id="1">
-                                        <div class="item px-8 py-5 d-flex flex-column justify-content-center align-items-center">
-                                                <img class="img-fluid mb-10" src="./attachments/s1.png" alt="">
-                                                <p>111111111111111</p>
-                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem fugiat dolores quaerat architecto aperiam dolore ab iusto maiores deserunt, animi at... <span onclick="open()">Read More</span></p>
-                                        </div>
-                                </div>
-                                <div class="col lg:col-6" data-id="2">
-                                        <div class="item px-8 py-5 d-flex flex-column justify-content-center align-items-center">
-                                                <img class="img-fluid mb-10" src="./attachments/s2.png" alt="">
-                                                <p>111111111111111</p>
-                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem fugiat dolores quaerat architecto aperiam dolore ab iusto maiores deserunt, animi at... <span onclick="open()">Read More</span></p>
-                                        </div>
-                                </div>
-                                <div class="col lg:col-6" data-id="3">
-                                        <div class="item px-8 py-5 d-flex flex-column justify-content-center align-items-center">
-                                                <img class="img-fluid mb-10" src="./attachments/s3.png" alt="">
-                                                <p>111111111111111</p>
-                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem fugiat dolores quaerat architecto aperiam dolore ab iusto maiores deserunt, animi at... <span onclick="open()">Read More</span></p>
-                                        </div>
-                                </div>
-                                <div class="col lg:col-6" data-id="4">
-                                        <div class="item px-8 py-5 d-flex flex-column justify-content-center align-items-center">
-                                                <img class="img-fluid mb-10" src="./attachments/s4.png" alt="">
-                                                <p>111111111111111</p>
-                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem fugiat dolores quaerat architecto aperiam dolore ab iusto maiores deserunt, animi at... <span onclick="open()">Read More</span></p>
-                                        </div>
-                                </div>
+        <section class="Services py-5" id="Services">
+                <div class="container px-0 pt-5">
+                        <h2 class="title m-auto mb-4">Services</h2>
+                        <div class="row row-gap-5 m-auto py-5">
+                                
                         </div>
-                        <div class="Video py-12" id="Video">
-                                <div class="container py-12">
-                                        <h2 class="m-auto mb-12">WATCH VIDEO</h2>
+                        <div class="Video py-5" id="Video">
+                                <div class="container py-5">
+                                        <h2 class="m-auto">WATCH VIDEO</h2>
                                         <button class="m-auto d-block border-0 bg-transparent" onclick="openVideo()">
-                                                <i class="fa-brands fa-youtube"></i>
+                                                <i class="fa-brands fa-youtube text-white"></i>
                                         </button>
                                 </div>
                         </div>
                 </div>
         </section>
 
-        <section class="WhyUs py-10" id="WhyUs">
+        <section class="WhyUs py-5" id="WhyUs">
                 <div class="container">
-                        <h2 class="m-auto mb-12">WHY US?</h2>
-                        <div class="row row-gap-10">
-                                <div class="lg:col-4">
+                        <h2 class="title m-auto">WHY US?</h2>
+                        <div class="row row-gap-5 py-5 m-auto">
+                                <div class="col col-lg-4 m-auto">
                                         <div class="item">
                                                 <div class="div w-100 h-100 d-flex flex-column justify-content-end px-5">
-                                                        <h4 class="fw-bold mb-5">The Best</h4>
-                                                        <p>At <span class="span1">L10N</span> <span class="span2">House</span>, each employee strives to embrace our core values of QUALITY, DEPENDABILITY, SPEED, and CONFIDENTIALITY.
+                                                        <h4 class="title text-white fw-bold mb-3">The Best</h4>
+                                                        <p class="description text-white fs-4 fw-medium">At <span class="span1">L10N</span> <span class="span2">House</span>, each employee strives to embrace our core values of QUALITY, DEPENDABILITY, SPEED, and CONFIDENTIALITY.
                                                         These values are reflected in every service we provide, whether large or small.</p>
                                                 </div>
                                         </div>
                                 </div>
-                                <div class="lg:col-4">
+                                <div class="col col-lg-4 m-auto">
                                         <div class="item">
                                                 <div class="div w-100 h-100 d-flex flex-column justify-content-end px-5">
-                                                        <h4 class="fw-bold mb-5">Solutions for all your language challenges</h4>
-                                                        <p>Managing the multilingual content that gives a voice to your global strategy and brand is accompanied by many challenges
+                                                        <h4 class="title text-white fw-bold mb-3">Solutions for all your language challenges</h4>
+                                                        <p class="description text-white fs-4 fw-medium">Managing the multilingual content that gives a voice to your global strategy and brand is accompanied by many challenges
                                                         - from the creation of content and its translation into many languages, to electronic publishing and printing across
                                                         many formats. <span class="span1">L10N</span> <span class="span2">House</span> is your one stop solution to overcoming all these problems professionally and cost-effectively.</p>
                                                 </div>
                                         </div>
                                 </div>
-                                <div class="lg:col-4">
+                                <div class="col col-lg-4 m-auto">
                                         <div class="item">
                                                 <div class="div w-100 h-100 d-flex flex-column justify-content-end px-5">
-                                                        <h4 class="fw-bold mb-5">Our highly qualified teams</h4>
-                                                        <p><span class="span1">L10N</span> <span class="span2">House</span> understands your business. Your own assigned linguists, project manager and account manager are dedicated to
+                                                        <h4 class="title text-white fw-bold mb-3">Our highly qualified teams</h4>
+                                                        <p class="description text-white fs-4 fw-medium"><span class="span1">L10N</span> <span class="span2">House</span> understands your business. Your own assigned linguists, project manager and account manager are dedicated to
                                                         provide outstanding service and deliver your project on schedule, within your budget & according to your own
                                                         specifications.</p>
                                                 </div>
@@ -205,9 +182,81 @@
                 </div>
         </section>
 
-        <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <div class="Modal servicesData">
+                <div class="container">
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                        <h1>oihqodijpioajpddoijp</h1>
+                </div>
+        </div>
+
+        <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="./javascript/plugins/animated-headline/jquery-2.1.1.js"></script>
         <script src="./javascript/plugins/animated-headline/main.js"></script>
+        <script src="https://code.jquery.com/jquery-4.0.0.js"></script>
         <script src="./javascript/variables.js"></script>
         <script src="./javascript/functions.js"></script>
         <script src="./javascript/main.js"></script>

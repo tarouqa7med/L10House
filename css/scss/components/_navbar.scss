@@ -12,28 +12,40 @@ nav.navbar {
 
         & .container {
 
-                max-width: 90%;
+                width: 90%;
 
                 .navbar-brand img {
                         width: 90px;
                 }
 
-                .drawer-body .nav-link {
+                .nav-item {
 
-                        padding: 0;
-                        color: $firstColor;
-                        font-weight: 600;
-                        position: relative;
-
-                        &::before {
-                                @include afterElement($btm: -6px, $bg-color: #EE5E00);
+                        .nav-link {
+        
+                                padding: 0;
+                                color: $firstColor;
+                                font-weight: 600;
+                                font-size: 16px;
+                                position: relative;
+        
+                                &::before {
+                                        @include afterElement($btm: -6px, $bg-color: $secondColor);
+                                }
+                                &.active::before {
+                                        @include afterElement($btm: -6px, $width: 100%, $bg-color: $secondColor);
+                                }
+                                &:hover::before {
+                                        @include afterElement($btm: -6px, $width: 100%, $bg-color: $secondColor);
+        
+                                }
                         }
-                        &.active::before {
-                                @include afterElement($btm: -6px, $width: 100%, $bg-color: #EE5E00);
-                        }
-                        &:hover::before {
-                                @include afterElement($btm: -6px, $width: 100%, $bg-color: #EE5E00);
 
+                        .dropdown-menu {
+                                transform: translateX(-50%);
+
+                                .dropdown-item {
+                                        font-size: 16px;
+                                }
                         }
                 }
         }

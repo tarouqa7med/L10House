@@ -12,13 +12,13 @@ header {
 
         .container {
 
-                max-width: 90%;
+                width: 90%;
 
                 .part1 {
 
                         .item {
 
-                                h2 {
+                                .title {
                                         color: $firstColor;
                                         font-size: 65px;
                                 }
@@ -33,12 +33,12 @@ header {
                                         margin-block: 10px !important;
                                         margin-left: 0;
 
-                                        h4 {
+                                        h4.cd-headline {
                                                 font-size: 20px !important;
                                                 font-weight: 500;
 
                                                 span {
-                                                        color: #EE5E00 !important;
+                                                        color: $secondColor !important;
                                                 }
                                         }
                                 }
@@ -70,6 +70,7 @@ header {
                                         span {
                                                 color: black !important;
                                                 font-weight: 500;
+                                                font-size: 16px;
                                         }
                                 }
                         }

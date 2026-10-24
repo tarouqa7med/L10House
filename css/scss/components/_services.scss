@@ -3,31 +3,32 @@
 .Services {
 
         scroll-margin-top: 125px;
-
         .container {
 
                 max-width: 100%;
 
-                h2 {
-                        color: #EE5E00;
+                & > .title {
+                        color: $secondColor;
                         font-weight: bold;
                         font-size: 40px;
                         position: relative;
                         width: fit-content;
         
                         &::after {
-                                @include afterElement($btm: -15px, $width: 25%, $height: 4px, $tdur: 500ms, $bg-color: #EE5E00);
+                                @include afterElement($btm: -15px, $width: 25%, $height: 4px, $tdur: 500ms, $bg-color: $secondColor);
                                 border-radius: 5px;
                         }
                 }
 
                 .row {
 
-                        max-width: 90%;
+                        width: 90%;
+                        max-width: 1320px !important;
                         margin-block: 50px;
 
                         .col {
                                 margin: auto;
+                                
                                 .item {
                                         margin: auto;
                                         width: 90%;
@@ -45,12 +46,8 @@
                                         }
 
                                         p {
-                                                color: black;
-                                                text-align: center;
-
-                                                span {
-                                                        color: $firstColor;
-                                                        font-weight: bold;
+                                                &.description {
+                                                        color: #555;
                                                 }
                                         }
                                 }
@@ -94,7 +91,7 @@
                                         }
                                 }
                                 button {
-                                        margin-top: 50px;
+                                        margin-top: 50px !important;
                                         i {
                                                 font-size: 75px;
                                                 transition-duration: 500ms;
